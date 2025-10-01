@@ -43,6 +43,11 @@
             bindings = <&kt CAPSLOCK>;
             key-positions = <8 9>;
         };
+
+        apostrophe {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <6 7>;
+        };
     };
 
     macros {
@@ -162,10 +167,28 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &none  &none   &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-        &bootloader  &none  &trans  &trans  &trans    &trans        &none         &none         &none         &none
-&trans  &trans       &none  &trans  &trans  &trans    &trans        &none         &none         &none         &none         &bt BT_CLR
-                            &trans  &trans  &trans    &trans        &trans        &trans
+       &sys_reset   &none  &none   &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+       &bootloader  &none  &trans  &trans  &trans    &trans        &none         &none         &none         &none
+&to 4  &trans       &none  &trans  &trans  &trans    &trans        &none         &none         &none         &none         &bt BT_CLR
+                           &trans  &trans  &trans    &trans        &trans        &trans
+            >;
+        };
+
+        game_layer {
+            bindings = <
+       &kp GRAVE  &kp Q  &kp W   &kp E      &kp R      &trans  &trans  &trans  &trans  &trans
+       &kp LSHFT  &kp A  &kp S   &kp D      &kp F      &trans  &trans  &trans  &trans  &trans
+&none  &kp LCTRL  &kp Z  &kp X   &kp C      &kp V      &trans  &trans  &trans  &trans  &trans  &to 0
+                         &trans  &kp SPACE  &lt 5 G    &trans  &trans  &trans
+            >;
+        };
+
+        gaming2_layer {
+            bindings = <
+        &kp T  &kp Y  &kp U   &kp I      &kp O      &kp O    &kp P     &kp LBKT   &kp RBKT   &kp BSLH
+        &kp G  &kp H  &kp J   &kp K      &kp L      &kp L    &kp SEMI  &kp APOS   &kp ENTER  &trans
+&trans  &kp B  &kp N  &kp M   &kp COMMA  &kp DOT    &kp DOT  &kp FSLH  &kp RSHFT  &trans     &trans    &trans
+                      &trans  &trans     &trans     &trans   &trans    &trans
             >;
         };
 
