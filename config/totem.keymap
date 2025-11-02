@@ -102,7 +102,7 @@
 
             bindings = <
               &kp Q           &kp W           &kp F        &kp P             &kp B      &kp J      &kp L        &kp U        &kp Y            &kp SEMI
-              &mt A LEFT_GUI  &mt R LEFT_ALT  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G      &kp M      &mt RSHFT N  &mt RCTRL E  &mt I RIGHT_ALT  &mt O RIGHT_GUI
+              &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G      &kp M      &mt RSHFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O
 &mt LCMD TAB  &kp Z           &kp X           &kp C        &kp D             &kp V      &kp K      &kp H        &kp COMMA    &kp DOT          &kp FSLH         &mt RIGHT_ALT SQT
                                               &kp DEL      &mo 2             &kp RET    &kp SPACE  &mo 2        &kp BSPC
             >;
