@@ -51,13 +51,13 @@
 
         shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <12 14>;
+            key-positions = <13 12>;
             layers = <1 0 2 3>;
         };
 
         rshift {
             bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <15 17>;
+            key-positions = <16 17>;
             layers = <1 0 2 3>;
         };
     };
