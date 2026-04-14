@@ -195,7 +195,7 @@
 
             bindings = <
        &sys_reset   &none  &none   &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &bootloader  &none  &trans  &trans  &trans    &trans        &none         &none         &none         &none
+       &bootloader  &none  &none   &trans  &trans    &trans        &none         &none         &none         &none
 &to 4  &trans       &none  &trans  &trans  &trans    &trans        &none         &none         &bt BT_CLR    &none         &none
                            &trans  &trans  &trans    &trans        &trans        &trans
             >;
